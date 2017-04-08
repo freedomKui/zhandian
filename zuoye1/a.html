@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #box{width: 100px;height: 100px;background: #f00}
+    </style>
+</head>
+<body>
+    <input type="button" name="btn" id="btn" value="按钮"/>
+    <div id="box"></div>
+    <!--
+    需求：1点击按钮，按钮背影色变成黄色
+         
+    步骤1 拿到按钮
+          document.getElementById("btn")
+        2 按钮添加点击事件
+         按钮.onclick=function(){
+         
+         }
+    3修改属性
+       元素.style.样式
+       
+       
+       
+       2点击按钮 让div高度宽度变化
+       
+         步骤1 拿到按钮
+          document.getElementById("btn")
+        2 按钮添加点击事件
+         按钮.onclick=function(){
+             拿到要改的元素 修改宽高属性
+         }
+         3修改属性
+       元素.style.样式
+    -->
+    <script>
+    
+    document.getElementById('btn').onclick=function(){
+        document.getElementById('btn').style.background='red';
+    };
+     document.getElementById('box').onclick=function(){
+        document.getElementById('box').style.width='200px';
+    document.getElementById('box').style.height='200px';
+    };  
+        
+       var kaivon=12;
+        console.log(kaivon);
+       console.log(kaivon);
+        
+    </script>
+</body>
+</html>
